@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask Aaryan Vyas</title>
+  <meta name="description" content="Chat with an assistant that answers questions about Aaryan Vyas, a B.Tech Computer Science student and AI engineer intern, using only his resume.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ask Aaryan Vyas">
+  <meta property="og:description" content="A chatbot that answers questions about Aaryan Vyas using only his resume.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0a'/%3E%3Cpath d='M14 48 32 14l18 34h-8l-3.2-6.6H25.2L22 48zm14.2-13.4h7.6L32 26.6z' fill='%23ffd60a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#question">Skip to the chat box</a>
+
+  <header class="top">
+    <div class="wrap top__row">
+      <a class="brand" href="/" aria-label="Aaryan Vyas, home">
+        <span class="brand__mark" aria-hidden="true">AV</span>
+        <span class="brand__name">Aaryan Vyas</span>
+      </a>
+      <a class="link" href="mailto:myself.aryanvyas@gmail.com">Email Aaryan</a>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">Resume assistant</p>
+      <h1 id="title">Ask anything about <span class="hl">Aaryan Vyas</span></h1>
+      <p class="lede">A chatbot that answers only from his resume. If something is not on it, the bot says so.</p>
+
+      <dl class="facts">
+        <div class="fact">
+          <dt>Education</dt>
+          <dd>B.Tech in Computer Science, Shri Vaishnav Institute of Technology, Indore. 2022 to 2026.</dd>
+        </div>
+        <div class="fact">
+          <dt>Experience</dt>
+          <dd>AI Engineer Intern, IBM SVIIT. January to May 2026.</dd>
+        </div>
+        <div class="fact">
+          <dt>Projects</dt>
+          <dd>Car Price Prediction, Tech TL;DR, Video Decoding Website.</dd>
+        </div>
+        <div class="fact">
+          <dt>Stack</dt>
+          <dd>Python, SQL, JavaScript, React, Flask, Scikit-learn, TensorFlow.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="chat" aria-label="Chat with the resume assistant">
+      <div class="chat__head">
+        <div class="chat__title">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Resume chat</span>
+        </div>
+        <button class="btn btn--ghost" type="button" id="clear">Clear chat</button>
+      </div>
+
+      <div class="log" id="log" role="log" aria-live="polite" aria-relevant="additions" tabindex="0" aria-label="Conversation"></div>
+
+      <div class="chips" id="chips" aria-label="Suggested questions"></div>
+
+      <form class="composer" id="form" autocomplete="off">
+        <label class="sr" for="question">Your question about Aaryan</label>
+        <textarea id="question" name="question" rows="1" maxlength="500" placeholder="Ask about his skills or projects" enterkeyhint="send"></textarea>
+        <button class="btn btn--primary" type="submit" id="send" disabled>
+          <span>Send</span>
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M3 10h12M10.5 4.5 16 10l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>Answers are written by AI from the resume alone and can still be wrong. Check anything important with Aaryan.</p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="markdown.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
