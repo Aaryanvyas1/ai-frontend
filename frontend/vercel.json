@@ -1,7 +1,7 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/api/:path*", "destination": "https://ai-portfolio-1e75lyx0k-luck-c3e3.vercel.app/" }
+    { "source": "/api/:path*", "destination": "https://ai-backend-pi-bice.vercel.app/" }
   ],
   "headers": [
     {
